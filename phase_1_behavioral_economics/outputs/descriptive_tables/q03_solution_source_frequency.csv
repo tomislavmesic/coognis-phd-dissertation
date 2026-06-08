@@ -1,0 +1,32 @@
+variable,category,count,percent
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Publicly available sources on the Internet",30,16.04
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.)",28,14.97
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Publicly available sources on the Internet, Other publicly available knowledge sources",20,10.7
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Internal knowledge base system, Publicly available sources on the Internet, Other publicly available knowledge sources",16,8.56
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Internal knowledge base system, Publicly available sources on the Internet",16,8.56
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Internal knowledge base system",9,4.81
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Publicly available sources on the Internet, Other",7,3.74
+q03_solution_source,Other,6,3.21
+q03_solution_source,"Publicly available sources on the Internet, Other publicly available knowledge sources",6,3.21
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Publicly available sources on the Internet, Public social networks, Other publicly available knowledge sources",6,3.21
+q03_solution_source,Publicly available sources on the Internet,5,2.67
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Other",4,2.14
+q03_solution_source,Internal knowledge base system,4,2.14
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Publicly available sources on the Internet, Public social networks",4,2.14
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Publicly available sources on the Internet, Other publicly available knowledge sources, Other",3,1.6
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Internal knowledge base system, Publicly available sources on the Internet, Public social networks",3,1.6
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Other publicly available knowledge sources",2,1.07
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Publicly available sources on the Internet, Public social networks, Other publicly available knowledge sources, Other",2,1.07
+q03_solution_source,"Publicly available sources on the Internet, Other",2,1.07
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Internal knowledge base system, Publicly available sources on the Internet, Other",2,1.07
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Internal knowledge base system, Other",2,1.07
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Internal knowledge base system, Publicly available sources on the Internet, Other publicly available knowledge sources, Other",1,0.53
+q03_solution_source,"Other publicly available knowledge sources, Other",1,0.53
+q03_solution_source,"Publicly available sources on the Internet, Other publicly available knowledge sources, Other",1,0.53
+q03_solution_source,"Internal knowledge base system, Publicly available sources on the Internet",1,0.53
+q03_solution_source,"Internal knowledge base system, Public social networks, Other publicly available knowledge sources, Other",1,0.53
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Internal knowledge base system, Publicly available sources on the Internet, Public social networks, Other publicly available knowledge sources, Other",1,0.53
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Other publicly available knowledge sources, Other",1,0.53
+q03_solution_source,Other publicly available knowledge sources,1,0.53
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Internal knowledge base system, Other publicly available knowledge sources",1,0.53
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Internal knowledge base system, Publicly available sources on the Internet, Public social networks, Other publicly available knowledge sources",1,0.53

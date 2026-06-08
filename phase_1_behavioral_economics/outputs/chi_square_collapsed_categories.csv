@@ -1,0 +1,7 @@
+analysis_type,variable_x,variable_y,n,chi2,dof,p_value,bias_corrected_cramers_v,minimum_expected_count,expected_cells_below_5_percent,interpretation
+collapsed exploratory,q13_similarity_collapsed,q16_test_willingness_collapsed,187,0.487,1,0.485278,0.0,3.0,25.0,exploratory due to sparse expected counts
+collapsed exploratory,q13_similarity_collapsed,q17_profile_consent_collapsed,187,0.0717,1,0.788874,0.0,6.5455,0.0,meets expected-count screening criterion
+collapsed exploratory,q18_ai_helpfulness_collapsed,q19_internal_ai_consent_collapsed,187,1.0998,1,0.294309,0.0225,0.4064,50.0,exploratory due to sparse expected counts
+collapsed exploratory,q18_ai_helpfulness_collapsed,q21_work_content_ai_consent_collapsed,187,0.2153,1,0.642629,0.0,0.1925,50.0,exploratory due to sparse expected counts
+collapsed exploratory,q24_organization_size_collapsed,q07_hidden_knowledge_exists,187,0.2649,1,0.606768,0.0,4.8663,25.0,exploratory due to sparse expected counts
+collapsed exploratory,q27_decision_level_collapsed,q09_hidden_knowledge_value_collapsed,186,5.6206,2,0.060186,0.1397,3.2151,16.67,exploratory due to sparse expected counts

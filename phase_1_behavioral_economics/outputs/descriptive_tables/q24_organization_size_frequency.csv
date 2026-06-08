@@ -1,0 +1,4 @@
+variable,category,count,percent
+q24_organization_size,100-500,86,45.99
+q24_organization_size,More than 500,70,37.43
+q24_organization_size,Less than 100,31,16.58

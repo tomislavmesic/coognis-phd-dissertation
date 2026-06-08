@@ -1,0 +1,12 @@
+variable_x,variable_y,n,spearman_rho,spearman_p_value,kendall_tau_b,kendall_p_value,interpretation
+q08_knowledge_utilization,q09_hidden_knowledge_value,186,-0.194,0.00796,-0.1716,0.006507,exploratory ordinal association; no causal inference
+q10_fear_of_sharing,q16_personality_test_willingness,187,0.0167,0.820672,0.0156,0.816356,exploratory ordinal association; no causal inference
+q16_personality_test_willingness,q17_profile_use_consent,187,0.4754,0.0,0.4565,0.0,exploratory ordinal association; no causal inference
+q18_ai_helpfulness,q19_ai_internal_channel_analysis,187,0.3106,1.5e-05,0.2938,2.2e-05,exploratory ordinal association; no causal inference
+q18_ai_helpfulness,q20_ai_public_profile_analysis,187,0.1632,0.025658,0.1556,0.025525,exploratory ordinal association; no causal inference
+q18_ai_helpfulness,q21_ai_work_content_analysis,187,0.1998,0.00612,0.1918,0.006488,exploratory ordinal association; no causal inference
+q23_age_group,q18_ai_helpfulness,185,0.0257,0.728227,0.023,0.736117,exploratory ordinal association; no causal inference
+q24_organization_size,q08_knowledge_utilization,187,-0.0631,0.391205,-0.0557,0.385767,exploratory ordinal association; no causal inference
+q25_tenure,q18_ai_helpfulness,187,0.0737,0.316225,0.068,0.318016,exploratory ordinal association; no causal inference
+q26_education,q18_ai_helpfulness,187,0.0568,0.44025,0.0553,0.437958,exploratory ordinal association; no causal inference
+q27_decision_level,q09_hidden_knowledge_value,186,0.0707,0.337301,0.064,0.326773,exploratory ordinal association; no causal inference

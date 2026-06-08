@@ -1,0 +1,85 @@
+[
+  {
+    "id": "certificate-request",
+    "query": "I will need my certificate that I finish all my courses. How could I get it?",
+    "use_synapse": true,
+    "use_uex": true,
+    "use_ulm": true,
+    "expect": {
+      "min_uex_items": 1,
+      "expected_domain_codes": ["administrative-services"],
+      "expert_suggestion": true,
+      "response_should_contain": ["certificate"],
+      "response_should_not_contain": ["wi-fi", "internet not working"]
+    }
+  },
+  {
+    "id": "wifi-help",
+    "query": "Campus internet keeps disconnecting in my dorm. What should I check first?",
+    "use_synapse": true,
+    "use_uex": true,
+    "use_ulm": true,
+    "expect": {
+      "min_uex_items": 1,
+      "expert_suggestion": true,
+      "response_should_contain": ["disconnect"],
+      "response_should_not_contain": ["exchange program"]
+    }
+  },
+  {
+    "id": "out-of-domain-car-color",
+    "query": "What is the color of my car?",
+    "use_synapse": true,
+    "use_uex": true,
+    "use_ulm": true,
+    "expect": {
+      "max_uex_items": 0,
+      "max_ulm_chunks": 0,
+      "expert_suggestion": false,
+      "response_should_contain": ["do not have enough relevant context"],
+      "response_should_not_contain": ["student exchange", "wi-fi", "administrative services"]
+    }
+  },
+  {
+    "id": "phishing-credentials",
+    "query": "I entered my password into a suspicious university login page. What should I do now?",
+    "use_synapse": true,
+    "use_uex": true,
+    "use_ulm": true,
+    "expect": {
+      "min_uex_items": 1,
+      "expected_domain_codes": ["cybersecurity"],
+      "expert_suggestion": true,
+      "response_should_contain": ["password", "suspicious"],
+      "response_should_not_contain": ["exchange program", "certificate"]
+    }
+  },
+  {
+    "id": "tuition-payment-delay",
+    "query": "I cannot pay my tuition on time this month. Is there a way to request a delay or installments?",
+    "use_synapse": true,
+    "use_uex": true,
+    "use_ulm": true,
+    "expect": {
+      "min_uex_items": 1,
+      "expected_domain_codes": ["finance-services"],
+      "expert_suggestion": true,
+      "response_should_contain": ["tuition", "delay"],
+      "response_should_not_contain": ["wi-fi", "phishing"]
+    }
+  },
+  {
+    "id": "elective-course-choice",
+    "query": "I need to choose between two elective courses and compare their workload. How should I decide?",
+    "use_synapse": true,
+    "use_uex": true,
+    "use_ulm": true,
+    "expect": {
+      "min_uex_items": 1,
+      "expected_domain_codes": ["learning-support"],
+      "expert_suggestion": true,
+      "response_should_contain": ["workload", "elective"],
+      "response_should_not_contain": ["wi-fi", "tuition"]
+    }
+  }
+]

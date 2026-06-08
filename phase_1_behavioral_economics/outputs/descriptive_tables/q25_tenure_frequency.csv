@@ -1,0 +1,5 @@
+variable,category,count,percent
+q25_tenure,1-5 years,86,45.99
+q25_tenure,5-10 years,47,25.13
+q25_tenure,More than 10 years,43,22.99
+q25_tenure,Less than 1 year,11,5.88

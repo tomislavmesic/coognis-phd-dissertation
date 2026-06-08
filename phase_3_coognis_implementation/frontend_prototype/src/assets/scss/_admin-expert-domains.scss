@@ -1,0 +1,49 @@
+@use 'variables' as *;
+
+.admin-expert-domains__card {
+  margin-bottom: map-get($spacers, 4);
+}
+
+.admin-expert-domains__identity {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.admin-expert-domains__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: map-get($spacers, 1);
+}
+
+.admin-expert-domains__account {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.admin-expert-domains__domain-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: map-get($spacers, 2);
+}
+
+.admin-expert-domains__domain-option {
+  display: flex;
+  align-items: center;
+  gap: map-get($spacers, 2);
+  padding: map-get($spacers, 2);
+  padding-left: 2rem;
+  border: 1px solid rgba($gray-800, 0.1);
+  border-radius: 0.4rem;
+}
+[data-bs-theme='dark'] .admin-expert-domains__domain-option {
+  border: 1px solid rgba($gray-300, 0.1);
+}
+
+@media (max-width: 991.98px) {
+  .base-card__actions,
+  .admin-expert-domains__domain-grid {
+    grid-template-columns: 1fr;
+  }
+}

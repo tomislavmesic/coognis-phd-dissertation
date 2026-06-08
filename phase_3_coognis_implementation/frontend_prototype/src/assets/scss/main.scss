@@ -1,0 +1,60 @@
+@use 'bootstrap-overrides';
+@use 'theme-tokens';
+@use 'base-ui';
+@use 'alerts';
+@use 'toasts';
+@use 'cookie-consent';
+@use 'layout';
+@use 'forms';
+@use 'auth';
+@use 'user-settings';
+@use 'chat-interface';
+@use 'expert-handoff';
+@use 'feedback-modal';
+@use 'admin';
+@use 'admin-conversations';
+@use 'admin-expert-domains';
+@use 'admin-ulm-sources';
+@use 'admin-chat-sessions';
+@use 'admin-user-creation';
+@use 'admin-user-management';
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('../fonts/PublicSans-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('../fonts/PublicSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('../fonts/PublicSans-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('../fonts/PublicSans-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('../fonts/PublicSans-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

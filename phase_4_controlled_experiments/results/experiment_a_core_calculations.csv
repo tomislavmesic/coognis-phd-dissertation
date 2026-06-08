@@ -1,0 +1,17 @@
+Metric,Value
+Participants,57.0
+Aligned preference count,42.0
+Generic preference count,15.0
+Aligned preference proportion,0.7368421052631579
+Binomial test p-value,0.00023000250432439468
+95% CI lower,0.6317593292003325
+95% CI upper,1.0
+Mean aligned score,4.293859649105263
+Mean generic score,3.365497076087719
+Mean difference,0.928362573140351
+Paired t statistic,7.577764492546679
+Paired t-test p-value,3.8403677955807356e-10
+95% CI diff lower,0.682942738617032
+95% CI diff upper,1.1737824076636698
+Cohen's h,0.49346939463332196
+Cohen's d (paired),1.0036994267573902

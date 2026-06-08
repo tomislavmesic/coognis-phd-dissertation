@@ -1,0 +1,126 @@
+variable,category,percent
+q01_formal_structure,Yes,64.71
+q01_formal_structure,To some level,29.41
+q01_formal_structure,No,5.88
+q02_lessons_learned,Periodically,49.2
+q02_lessons_learned,Yes,29.95
+q02_lessons_learned,No,20.86
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Publicly available sources on the Internet",16.04
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.)",14.97
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Publicly available sources on the Internet, Other publicly available knowledge sources",10.7
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Internal knowledge base system, Publicly available sources on the Internet, Other publicly available knowledge sources",8.56
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Internal knowledge base system, Publicly available sources on the Internet",8.56
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Internal knowledge base system",4.81
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Publicly available sources on the Internet, Other",3.74
+q03_solution_source,Other,3.21
+q03_solution_source,"Publicly available sources on the Internet, Other publicly available knowledge sources",3.21
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Publicly available sources on the Internet, Public social networks, Other publicly available knowledge sources",3.21
+q03_solution_source,Publicly available sources on the Internet,2.67
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Other",2.14
+q03_solution_source,Internal knowledge base system,2.14
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Publicly available sources on the Internet, Public social networks",2.14
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Publicly available sources on the Internet, Other publicly available knowledge sources, Other",1.6
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Internal knowledge base system, Publicly available sources on the Internet, Public social networks",1.6
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Other publicly available knowledge sources",1.07
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Publicly available sources on the Internet, Public social networks, Other publicly available knowledge sources, Other",1.07
+q03_solution_source,"Publicly available sources on the Internet, Other",1.07
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Internal knowledge base system, Publicly available sources on the Internet, Other",1.07
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Internal knowledge base system, Other",1.07
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Internal knowledge base system, Publicly available sources on the Internet, Other publicly available knowledge sources, Other",0.53
+q03_solution_source,"Other publicly available knowledge sources, Other",0.53
+q03_solution_source,"Publicly available sources on the Internet, Other publicly available knowledge sources, Other",0.53
+q03_solution_source,"Internal knowledge base system, Publicly available sources on the Internet",0.53
+q03_solution_source,"Internal knowledge base system, Public social networks, Other publicly available knowledge sources, Other",0.53
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Internal knowledge base system, Publicly available sources on the Internet, Public social networks, Other publicly available knowledge sources, Other",0.53
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Other publicly available knowledge sources, Other",0.53
+q03_solution_source,Other publicly available knowledge sources,0.53
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Internal knowledge base system, Other publicly available knowledge sources",0.53
+q03_solution_source,"Official internal collaboration channels (email, slack, teams, etc.), Internal knowledge base system, Publicly available sources on the Internet, Public social networks, Other publicly available knowledge sources",0.53
+q04_knowledge_base,Periodically,37.43
+q04_knowledge_base,Yes,26.2
+q04_knowledge_base,We don't have such a system,21.93
+q04_knowledge_base,No,14.44
+q05_expert_finder,We don't have such a system,29.95
+q05_expert_finder,No,27.27
+q05_expert_finder,Periodically,26.2
+q05_expert_finder,Yes,16.58
+q06_project_knowledge,We don't have such a system,30.48
+q06_project_knowledge,Periodically,26.2
+q06_project_knowledge,No,23.53
+q06_project_knowledge,Yes,19.79
+q07_hidden_knowledge_exists,Yes,93.05
+q07_hidden_knowledge_exists,No,6.95
+q08_knowledge_utilization,25% to 50%,37.97
+q08_knowledge_utilization,50% to 75%,26.2
+q08_knowledge_utilization,Less than 25%,24.6
+q08_knowledge_utilization,More than 75%,8.56
+q08_knowledge_utilization,Completely unutilized,2.14
+q08_knowledge_utilization,100% utilized,0.53
+q09_hidden_knowledge_value,Large,43.85
+q09_hidden_knowledge_value,Medium,31.55
+q09_hidden_knowledge_value,Very large,17.11
+q09_hidden_knowledge_value,Low,4.81
+q09_hidden_knowledge_value,Very low,2.14
+q09_hidden_knowledge_value,Missing,0.53
+q10_fear_of_sharing,Mostly No,41.71
+q10_fear_of_sharing,No,33.16
+q10_fear_of_sharing,Mostly Yes,19.79
+q10_fear_of_sharing,Yes,5.35
+q11_share_with_colleagues,Yes,94.65
+q11_share_with_colleagues,With certain compensation Yes,4.28
+q11_share_with_colleagues,No,1.07
+q12_share_with_management,Yes,83.96
+q12_share_with_management,With certain compensation Yes,10.7
+q12_share_with_management,No,5.35
+q13_personality_similarity,Yes,72.73
+q13_personality_similarity,It doesn't matter to me,25.67
+q13_personality_similarity,No,1.6
+q14_extrovert_self_assessment,Yes,51.87
+q14_extrovert_self_assessment,No,43.32
+q14_extrovert_self_assessment,I don't want to declare,4.81
+q15_prior_personality_test,Yes,71.12
+q15_prior_personality_test,No,28.88
+q16_personality_test_willingness,Yes,80.75
+q16_personality_test_willingness,With certain conditions Yes,13.37
+q16_personality_test_willingness,No,5.88
+q17_profile_use_consent,Yes,45.45
+q17_profile_use_consent,With certain conditions Yes,41.71
+q17_profile_use_consent,No,12.83
+q18_ai_helpfulness,Yes,54.01
+q18_ai_helpfulness,Up to a certain level Yes,44.92
+q18_ai_helpfulness,No,1.07
+q19_ai_internal_channel_analysis,With certain conditions Yes,35.29
+q19_ai_internal_channel_analysis,Yes,33.16
+q19_ai_internal_channel_analysis,No,20.32
+q19_ai_internal_channel_analysis,Up to a certain level Yes,11.23
+q20_ai_public_profile_analysis,No,58.29
+q20_ai_public_profile_analysis,Yes,19.25
+q20_ai_public_profile_analysis,With certain conditions Yes,14.97
+q20_ai_public_profile_analysis,Up to a certain level Yes,7.49
+q21_ai_work_content_analysis,Yes,48.13
+q21_ai_work_content_analysis,With certain conditions Yes,31.55
+q21_ai_work_content_analysis,Up to a certain level Yes,10.7
+q21_ai_work_content_analysis,No,9.63
+q22_gender,Male,54.01
+q22_gender,Female,44.39
+q22_gender,Prefer not to say,1.07
+q22_gender,Other,0.53
+q23_age_group,40-50,43.32
+q23_age_group,30-40,33.16
+q23_age_group,20-30,12.3
+q23_age_group,50-60,8.02
+q23_age_group,More than 60,2.14
+q23_age_group,Prefer not to say,1.07
+q24_organization_size,100-500,45.99
+q24_organization_size,More than 500,37.43
+q24_organization_size,Less than 100,16.58
+q25_tenure,1-5 years,45.99
+q25_tenure,5-10 years,25.13
+q25_tenure,More than 10 years,22.99
+q25_tenure,Less than 1 year,5.88
+q26_education,High,80.21
+q26_education,Upper,11.23
+q26_education,Middle,8.56
+q27_decision_level,Medium,54.01
+q27_decision_level,Low,24.6
+q27_decision_level,High,21.39

@@ -1,0 +1,10 @@
+__pycache__/
+.DS_Store
+node_modules/
+dist/
+models/
+.env
+.matplotlib-cache/
+.ipynb_checkpoints/
+.venv/
+

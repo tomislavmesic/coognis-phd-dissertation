@@ -1,0 +1,70 @@
+@use 'variables' as *;
+
+.app-toast-container {
+  z-index: 1095;
+  max-width: min(100vw - 1.5rem, 24rem);
+}
+
+.app-toast {
+  width: min(100%, 24rem);
+  backdrop-filter: blur(14px);
+  border-radius: $border-radius;
+  border: 1px solid rgba($color-line, 0.01);
+  border-left: solid .5rem rgba($color-line, 0.7);
+  overflow: hidden;
+  box-shadow: $box-shadow-xl;
+  background: var(--bs-toast-bg);
+}
+
+
+
+.app-toast__header,
+.app-toast__body {
+  background: transparent;
+  border: 0 none;
+}
+
+.app-toast__header {
+  padding-bottom: 0;
+  color: var(--bs-heading-color);
+
+  .btn-close {
+    transform: scale(.8);
+  }
+}
+
+.app-toast__body {
+  padding-top: 0;
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+}
+
+.app-toast--success {
+  border-color: rgba(var(--bs-success-rgb), 0.9);
+}
+
+.app-toast--info {
+  border-color: rgba(var(--bs-info-rgb), 0.9);
+}
+
+.app-toast--warning {
+  border-color: rgba(var(--bs-warning-rgb), 0.92);
+}
+
+.app-toast--danger {
+  border-color: rgba(var(--bs-danger-rgb), 0.92);
+}
+
+[data-bs-theme='dark'] {
+  .app-toast {
+    box-shadow: 0 1rem 2.75rem rgba(0, 0, 0, 0.35) !important;
+    color: var(--bs-body-color);
+  }
+
+  .app-toast-header {
+    .btn-close {
+      --bs-btn-close-filter: invert(1) grayscale(100%) brightness(200%);
+    }
+  }
+}

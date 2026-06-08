@@ -1,0 +1,401 @@
+@use 'variables' as *;
+
+@keyframes auth-gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.auth-theme-shell {
+  display: grid;
+  grid-template-columns: minmax(20rem, 28rem) minmax(0, 1fr);
+  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at top left, rgba($color-brand-100, 0.72), transparent 26rem),
+    linear-gradient(135deg, #f8fbff 0%, $body-bg 42%, #edf3ff 100%);
+}
+
+.auth-theme-shell__hero {
+  position: sticky;
+  top: 0;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+  padding: 2rem;
+  // background:
+  //   linear-gradient(180deg, transparent, rgba($color-brand-300, 0.16), rgba($color-brand-50, 0.8), rgba($color-surface, 0.96)),
+  //   radial-gradient(circle at bottom right, rgba($color-brand-300, 0.16), transparent 18rem);
+  border-right: 1px dashed rgba($color-line, 0.8);
+  // background-size: 400% 400%;
+	// animation: auth-gradient 15s ease infinite;
+}
+
+.auth-theme-shell__hero-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.auth-theme-shell__brand {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.45rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.auth-theme-shell__brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: auto;
+  height: auto;
+  flex: 0 0 auto;
+}
+
+.auth-theme-shell__brand-mark .brand-logo {
+  display: block;
+  width: auto;
+  height: auto;
+
+  .brand-logo__full {
+    width: 170px;
+    padding-top: 5px;
+    padding-left: 0;
+  }
+}
+
+.auth-theme-shell__brand-caption {
+  display: block;
+  color: $color-ink-500;
+  font-size: 0.82rem;
+}
+
+.auth-theme-shell__hero-copy {
+  max-width: 23rem;
+}
+
+.auth-theme-shell__eyebrow,
+.auth-theme-shell__panel-eyebrow {
+  margin-bottom: 0.7rem;
+  color: $color-brand-500;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.auth-theme-shell__headline {
+  margin: 0 0 1rem;
+  color: $color-ink-900;
+  font-size: clamp(1.8rem, 4vw, 2rem);
+  font-weight: 600;
+  line-height: clamp(2.4rem, 4vw, 2.8rem);
+}
+
+.auth-theme-shell__lede {
+  margin: 0;
+  color: $color-ink-500;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.auth-theme-shell__feature-card {
+  max-width: 24rem;
+  padding: 1.35rem 1.35rem 1.2rem;
+  border-radius: $border-radius;
+  background: rgba($color-surface, 0.86);
+  box-shadow: 0 1.35rem 2.75rem rgba(15, 23, 42, 0.08);
+}
+
+.auth-theme-shell__feature-kicker {
+  margin-bottom: 0.8rem;
+  color: $color-ink-900;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.auth-theme-shell__feature-list {
+  counter-reset: auth-feature;
+  display: grid;
+  gap: 0.8rem;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  color: $color-ink-700;
+
+  li {
+    position: relative;
+    min-height: 2.25rem;
+    padding-left: 2.5rem;
+    line-height: 1.55;
+  }
+
+  li::before {
+    counter-increment: auth-feature;
+    content: counter(auth-feature);
+    position: absolute;
+    top: 0.2rem;
+    left: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 999px;
+    background: $color-brand-500;
+    color: $white;
+    font-size: 0.72rem;
+    font-weight: 700;
+    line-height: 1;
+    box-shadow: 0 0.5rem 1.2rem rgba($color-brand-500, 0.22);
+  }
+}
+
+.auth-theme-shell__main {
+  display: flex;
+  align-items: safe center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow-y: auto;
+  padding: 2rem;
+}
+
+.auth-theme-shell__panel {
+  padding: 2rem;
+  border: 0 none;
+  border-radius: $border-radius;
+  background: rgba($color-surface, 0.94);
+  box-shadow: 0 1.75rem 3.25rem rgba(15, 23, 42, 0.1);
+}
+
+.auth-theme-shell__panel--default {
+  width: min(100%, 25rem);
+}
+
+.auth-theme-shell__panel--register {
+  width: min(100%, 40rem);
+}
+
+.auth-theme-shell__panel-header {
+  margin-bottom: 1.5rem;
+}
+
+.auth-theme-shell__panel-title {
+  margin: 0 0 0.5rem;
+  color: $color-ink-900;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.auth-theme-shell__panel-subtitle {
+  margin: 0;
+  color: $color-ink-500;
+}
+
+[data-bs-theme='dark'] {
+  .auth-theme-shell {
+    background:
+      radial-gradient(circle at top left, rgba($color-brand-500, 0.18), transparent 26rem),
+      linear-gradient(135deg, #0d1411 0%, #111927 42%, #15211c 100%);
+  }
+
+  .auth-theme-shell__hero {
+    // background:
+    //   linear-gradient(180deg, rgba(#141a21, 0.96), rgba(#111927, 0.9)),
+    //   radial-gradient(circle at bottom right, rgba($color-brand-500, 0.2), transparent 18rem);
+    border-right-color: rgba(148, 163, 184, 0.14);
+  }
+
+  .auth-theme-shell__brand-name,
+  .auth-theme-shell__headline,
+  .auth-theme-shell__feature-kicker,
+  .auth-theme-shell__panel-title {
+    color: #f8fafc;
+  }
+
+  .auth-theme-shell__brand-caption,
+  .auth-theme-shell__lede,
+  .auth-theme-shell__feature-list,
+  .auth-theme-shell__panel-subtitle {
+    color: #94a3b8;
+  }
+
+  .auth-theme-shell__feature-card,
+  .auth-theme-shell__panel {
+    border-color: rgba(148, 163, 184, 0.16);
+    background: rgba(#1c252e, 0.92);
+    box-shadow: 0 1.75rem 3.25rem rgba(2, 6, 23, 0.32);
+  }
+}
+
+.auth-shell {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: map-get($spacers, 5) 0;
+}
+
+.auth-card {
+  width: min(100%, 32rem);
+  padding: map-get($spacers, 5);
+  border: 1px solid rgba($color-line, 0.9);
+  border-radius:  $border-radius;
+  box-shadow: 0 1.5rem 3rem rgba(15, 23, 42, 0.1);
+}
+
+.auth-title {
+  margin-bottom: map-get($spacers, 3);
+  color: $color-ink-900;
+}
+
+.auth-subtitle {
+  margin-bottom: map-get($spacers, 4);
+  color: $color-ink-500;
+}
+
+.auth-theme-shell .form-card,
+.auth-shell .form-card {
+  padding: 0;
+  background: transparent !important;
+  border: 0;
+  box-shadow: none;
+}
+
+.auth-theme-shell .alert,
+.auth-shell .alert {
+  margin-bottom: 0;
+}
+
+.auth-theme-shell .form-actions,
+.auth-shell .form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.auth-theme-shell .form-actions .btn,
+.auth-shell .form-actions .btn {
+  min-width: 10rem;
+}
+
+@media (max-width: 991.98px) {
+  .auth-theme-shell {
+    grid-template-columns: 1fr;
+    height: auto;
+    overflow: visible;
+    background: none;
+  }
+
+  .auth-theme-shell__hero {
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border-right: 0;
+    border-bottom: 0;
+    position: fixed;
+    width: 100%;
+    min-height: auto;
+    max-height: none;
+    overflow: visible;
+    backdrop-filter: blur(14px);
+    background: rgba(var(--bs-body-bg-rgb), 0.8);
+    border-bottom: 1px dashed rgba($color-line, 0.7);
+  }
+
+  [data-bs-theme='dark'] .auth-theme-shell__hero {
+    border-bottom-color: rgba(148, 163, 184, 0.14);
+  }
+
+  .auth-theme-shell__hero-copy,
+  .auth-theme-shell__feature-card {
+    display: none;
+  }
+
+  .auth-theme-shell__main {
+    padding: 1.5rem;
+    min-height: 100vh;
+    overflow: visible;
+    align-items: safe center;
+  }
+
+  .auth-theme-shell__panel--register {
+    margin-top: 7rem;
+  }
+
+  .auth-theme-shell__brand-caption {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .auth-theme-shell {
+    height: auto;
+    min-height: auto;
+    background: none !important;
+  }
+
+  .auth-theme-shell__hero {
+    position: static;
+    background: unset !important;
+    border-bottom: 0 none;
+  }
+
+  .auth-theme-shell__main {
+    min-height: auto;
+  }
+
+  .auth-theme-shell__hero,
+  .auth-theme-shell__main {
+    padding: 1rem;
+  }
+
+  .auth-theme-shell__panel {
+    padding: 1.25rem;
+    border-radius: $border-radius;
+  }
+
+  .auth-theme-shell__headline {
+    font-size: 1.75rem;
+  }
+
+  .auth-theme-shell__panel--register {
+    margin-top: 0;
+  }
+
+  .auth-theme-shell__brand-caption {
+    display: none;
+  }
+
+   .app-shell {
+      background:
+        radial-gradient(circle at top left, rgba($color-brand-100, 0.72), transparent 26rem),
+        linear-gradient(135deg, #f8fbff 0%, $body-bg 42%, #edf3ff 100%);
+    }
+
+  [data-bs-theme='dark'] {
+    .app-shell {
+      background:
+        radial-gradient(circle at top left, rgba($color-brand-500, 0.18), transparent 26rem),
+        linear-gradient(135deg, #0d1411 0%, #111927 42%, #15211c 100%);
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@use 'variables' as *;
+
+.admin-user-creation {
+  display: grid;
+  gap: map-get($spacers, 4);
+}
+
+.admin-user-creation__summary {
+  display: grid;
+  gap: map-get($spacers, 3);
+}
+
+.admin-user-creation__summary-item {
+  padding-bottom: map-get($spacers, 2);
+  border-bottom: 1px solid rgba($color-line, 0.8);
+}
+[data-bs-theme='dark'] .admin-user-creation__summary-item {
+  border-color: rgba($gray-700, 0.8);
+}
+
+.admin-user-creation__summary-item:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}

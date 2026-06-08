@@ -1,0 +1,99 @@
+@use 'variables' as *;
+
+[data-bs-theme='light'] {
+  --bs-body-color: #{$gray-800};
+  --bs-heading-color: #{$gray-900};
+  --bs-body-bg: #{$gray-100};
+
+  --bs-light-bg-subtle: #{rgba($gray-100, 1)};
+}
+
+[data-bs-theme='dark'] {
+  --bs-body-color: #{$gray-400};
+  --bs-heading-color: #{$gray-100};
+  --bs-body-bg: #{$gray-900};
+  
+  --bs-light-bg-subtle: #{rgba($gray-900, 0.5)};
+
+}
+
+.btn,
+.base-button,
+.form-control,
+.form-select {
+  --bs-button-border-radius: 0.4rem;
+}
+
+.form-control,
+.form-select {
+  --bs-form-bg: #{$white};
+  --bs-form-border-color: #{$gray-400};
+}
+[data-bs-theme='dark'] .form-control,
+[data-bs-theme='dark'] .form-select {
+  --bs-form-bg: #{$gray-800};
+  --bs-form-border-color: #{$gray-700};
+}
+
+.form-switch .form-check-input {
+  --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e") !important;
+  --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e") !important;
+  &:focus {
+    --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%2386b7fe'/%3e%3c/svg%3e");
+  }
+  &:checked {
+    --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e") !important;
+  }
+}
+[data-bs-theme=dark] .form-switch .form-check-input:not(:checked):not(:focus) {
+  --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%28255, 255, 255, 0.25%29'/%3e%3c/svg%3e");
+}
+
+.btn-primary {
+  --bs-btn-color: #{$white};
+}
+[data-bs-theme='dark'] .btn-primary {
+  --bs-btn-color: #{$gray-900};
+}
+
+.badge {
+  --bs-badge-padding-x: 0.65em;
+  --bs-badge-padding-y: 0.35em;
+  --bs-badge-font-size: 0.7em;
+  --bs-badge-font-weight: 700;
+  --bs-badge-color: #{$white};
+  --bs-badge-border-radius: 0.2rem;
+}
+
+.base-card {
+  --bs-card-bg: #{$white};
+}
+
+[data-bs-theme='dark'] .base-card {
+  --bs-card-bg: #{$gray-800};
+}
+
+.base-modal {
+  --bs-modal-bg: #{$white};
+}
+
+[data-bs-theme='dark'] .base-modal {
+  --bs-modal-bg: #{$gray-800};
+}
+
+.base-table .table {
+  --bs-table-bg: transparent;
+  --bs-table-head-bg: #{$gray-100};
+  --bs-table-head-color: #{$gray-900};
+  --bs-table-color: #{$gray-800};
+  --bs-table-border-color: #{$color-line};
+  --bs-table-border-color: rgba(148, 163, 184, 0.16);
+}
+
+[data-bs-theme='dark'] .base-table .table {
+  --bs-table-bg: #{$gray-800};
+  --bs-table-head-bg: #{$gray-900};
+  --bs-table-head-color: #{$gray-400};
+  --bs-table-color: #{$gray-600};
+  --bs-table-border-color: rgba(148, 163, 184, 0.16);
+}

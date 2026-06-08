@@ -1,0 +1,161 @@
+# PhD Dissertation Appendix Materials: Methodology Phase 1
+
+This folder contains the appendix materials for `Phase 1 - Behavioral Economics and Organizational Analysis` of the dissertation methodology. The materials document the statistical analysis workflow for the hidden-knowledge survey used to examine knowledge-sharing behavior, personality-related organizational preferences, and willingness to apply artificial intelligence in organizational processes.
+
+The executable source of record is provided as a Jupyter notebook. The input dataset is already cleaned and anonymized for appendix reproduction. The notebook starts from the prepared dataset and regenerates descriptive tables, exploratory inferential statistics, ordinal association tables, exploratory composite indicators, and figures.
+
+## Contents
+
+| Path | Purpose |
+| --- | --- |
+| `statistical_analysis.ipynb` | Reproduces the Phase 1 statistical analysis from the prepared dataset. |
+| `statistical_analysis.html` | Rendered HTML version of the statistical analysis notebook. |
+| `statistical_analysis.pdf` | Rendered PDF version of the statistical analysis notebook. |
+| `data/data_cleaned.csv` | Prepared anonymized respondent-level input dataset. |
+| `data/variable_dictionary.csv` | Mapping between analytical variable names and original survey-question text. |
+| `outputs/descriptive_tables/` | Exported descriptive tables and contingency tables. |
+| `outputs/plots/` | Exported PNG figures used as appendix artifacts. |
+| `outputs/exploratory_chi_square_original.csv` | Original exploratory chi-square tests with sparse-cell diagnostics. |
+| `outputs/chi_square_collapsed_categories.csv` | Collapsed-category chi-square tests. |
+| `outputs/ordinal_association_results.csv` | Spearman rho and Kendall tau-b ordinal association results. |
+| `outputs/data_with_exploratory_composites.csv` | Prepared dataset with exploratory composite indicators calculated by the notebook. |
+| `outputs/output_inventory.csv` | Inventory of generated analysis artifacts. |
+
+## Expected Data Layout
+
+The notebook uses relative paths and expects the following layout:
+
+```text
+phase_1_behavioral_economics/
+  data/
+    data_cleaned.csv
+    variable_dictionary.csv
+  outputs/
+    descriptive_tables/
+    plots/
+  statistical_analysis.ipynb
+```
+
+The input CSV file uses a semicolon delimiter and UTF-8 encoding:
+
+```python
+pd.read_csv("data/data_cleaned.csv", sep=";", encoding="utf-8-sig")
+```
+
+## Prepared Dataset
+
+`data/data_cleaned.csv` contains 187 valid survey responses. It starts from the cleaned Phase 1 survey export and excludes fields not needed for appendix statistical reproduction:
+
+- `timestamp`
+- `exploratory_hidden_knowledge_awareness_composite`
+- `exploratory_knowledge_sharing_willingness_composite`
+- `exploratory_personality_process_acceptance_composite`
+- `exploratory_ai_readiness_composite`
+- `exploratory_privacy_sensitivity_composite`
+
+The exploratory composite indicators are recalculated by the notebook and exported to `outputs/data_with_exploratory_composites.csv`.
+
+The optional e-mail field from the questionnaire is not included because it is absent from the analyzable CSV export and is not used in the statistical analysis.
+
+## Environment Setup
+
+Use Python 3.9 or newer.
+
+From the repository root:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+pip install pandas numpy scipy matplotlib jupyter ipykernel nbconvert
+python -m ipykernel install --user --name phase_01 --display-name "phase_01"
+```
+
+Then open the notebook in Jupyter or VS Code and select the `phase_01` kernel.
+
+## Reproduction Steps
+
+Run the notebook from the `phase_1_behavioral_economics/` directory, because the notebook code reads input files from `data/` and writes outputs to `outputs/`.
+
+```bash
+cd phase_1_behavioral_economics
+jupyter notebook
+```
+
+Run:
+
+1. `statistical_analysis.ipynb`
+
+   Inputs:
+
+   ```text
+   data/data_cleaned.csv
+   data/variable_dictionary.csv
+   ```
+
+   Main analytical procedures:
+
+   - Dataset schema audit.
+   - Missing-value and unique-value inspection.
+   - Frequency and percentage tables for all survey variables.
+   - Corrected multi-response analysis of `q03_solution_source`.
+   - Dissertation appendix plots for selected Phase 1 variables.
+   - Original exploratory chi-square tests with bias-corrected Cramer's V.
+   - Collapsed-category chi-square tests to reduce sparse expected cells.
+   - Spearman rho and Kendall tau-b ordinal association analysis.
+   - Exploratory composite indicator calculation.
+
+## Included Result Tables
+
+| File | Purpose |
+| --- | --- |
+| `outputs/descriptive_tables/all_frequency_tables.csv` | Combined frequency tables for all survey variables. |
+| `outputs/descriptive_tables/all_percentage_tables.csv` | Combined percentage tables for all survey variables. |
+| `outputs/descriptive_tables/q03_solution_source_multiselect_summary.csv` | Corrected multi-response frequency table for solution-source selection. |
+| `outputs/exploratory_chi_square_original.csv` | Original exploratory chi-square results with sparse expected-count diagnostics. |
+| `outputs/chi_square_collapsed_categories.csv` | Collapsed-category chi-square results. |
+| `outputs/ordinal_association_results.csv` | Ordinal association analysis using Spearman rho and Kendall tau-b. |
+| `outputs/descriptive_tables/exploratory_composite_indicator_summary.csv` | Summary of exploratory composite indicators. |
+| `outputs/data_with_exploratory_composites.csv` | Respondent-level dataset with recalculated exploratory composite indicators. |
+
+## Included Figures
+
+| File | Purpose |
+| --- | --- |
+| `outputs/plots/hidden_knowledge_existence.png` | Perceived existence of hidden knowledge. |
+| `outputs/plots/internal_knowledge_utilization.png` | Estimated internal knowledge utilization. |
+| `outputs/plots/hidden_knowledge_economic_value.png` | Perceived economic value of hidden knowledge. |
+| `outputs/plots/share_with_colleagues.png` | Willingness to share knowledge with colleagues. |
+| `outputs/plots/share_with_management.png` | Willingness to share knowledge with management. |
+| `outputs/plots/personality_similarity_preference.png` | Personality-similarity preference. |
+| `outputs/plots/personality_assessment_willingness.png` | Willingness to participate in personality assessment. |
+| `outputs/plots/ai_helpfulness.png` | Perceived helpfulness of AI. |
+| `outputs/plots/ai_internal_channel_analysis_consent.png` | Consent for AI analysis of internal communication. |
+| `outputs/plots/ai_public_profile_analysis_consent.png` | Consent for AI analysis of public profiles. |
+| `outputs/plots/ai_work_content_analysis_consent.png` | Consent for AI analysis of work content. |
+
+## Optional Notebook Export
+
+To regenerate a rendered HTML artifact after executing the notebook:
+
+```bash
+cd phase_1_behavioral_economics
+jupyter nbconvert --to html statistical_analysis.ipynb
+```
+
+To regenerate a PDF:
+
+```bash
+cd phase_1_behavioral_economics
+jupyter nbconvert --to pdf statistical_analysis.ipynb
+```
+
+PDF export requires a local LaTeX installation. If PDF export is not available, export from the browser after opening the HTML file.
+
+## Reproducibility Notes
+
+- Phase 1 is exploratory and supports the dissertation rationale; the results do not establish causal effects.
+- The notebook starts from `data/data_cleaned.csv`; it does not reproduce the earlier raw survey-export cleaning workflow.
+- The q03 multi-response parser treats `Other` as a standalone selected option and does not count it inside `Other publicly available knowledge sources`.
+- The chi-square tests are exploratory because several contingency tables contain sparse expected counts.
+- Results can vary slightly across Python package versions, especially statistical p-values and plot rendering.

@@ -1,0 +1,119 @@
+@use 'variables' as *;
+
+.cookie-consent {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 1080;
+  width: min(100% - 2rem, 34rem);
+}
+
+.cookie-consent__panel {
+  display: grid;
+  gap: 1rem;
+  padding: 1.2rem 1.2rem 1.1rem;
+  border: 1px solid rgba($color-line, 0.9);
+  border-radius: 1rem;
+  background: rgba($color-surface, 0.98);
+  box-shadow: 0 1.35rem 2.8rem rgba(15, 23, 42, 0.16);
+  backdrop-filter: blur(14px);
+}
+
+.cookie-consent__copy {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.cookie-consent__eyebrow {
+  color: $color-brand-500;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.cookie-consent__title {
+  margin: 0;
+  color: $color-ink-900;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.cookie-consent__text,
+.cookie-consent__modal-copy,
+.cookie-consent__category-text {
+  color: $color-ink-500;
+  font-size: 0.94rem;
+  line-height: 1.6;
+}
+
+.cookie-consent__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.cookie-consent__actions .btn {
+  flex: 1 1 10rem;
+}
+
+.cookie-consent__category-list {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.cookie-consent__category {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1rem;
+  align-items: start;
+  padding: 1rem;
+  border: 1px solid rgba($color-line, 0.75);
+  border-radius: 0.85rem;
+  background: rgba($gray-100, 0.9);
+}
+
+.cookie-consent__category-title {
+  margin: 0 0 0.35rem;
+  color: $color-ink-900;
+  font-size: 0.98rem;
+  font-weight: 600;
+}
+
+[data-bs-theme='dark'] .cookie-consent__panel {
+  border-color: rgba(148, 163, 184, 0.16);
+  background: rgba(#1c252e, 0.94);
+  box-shadow: 0 1.35rem 2.8rem rgba(2, 6, 23, 0.34);
+}
+
+[data-bs-theme='dark'] .cookie-consent__title,
+[data-bs-theme='dark'] .cookie-consent__category-title {
+  color: #f8fafc;
+}
+
+[data-bs-theme='dark'] .cookie-consent__text,
+[data-bs-theme='dark'] .cookie-consent__modal-copy,
+[data-bs-theme='dark'] .cookie-consent__category-text {
+  color: #94a3b8;
+}
+
+[data-bs-theme='dark'] .cookie-consent__category {
+  border-color: rgba(148, 163, 184, 0.16);
+  background: rgba(#141a21, 0.92);
+}
+
+@media (max-width: 767.98px) {
+  .cookie-consent {
+    right: 1rem;
+    bottom: 1rem;
+    width: calc(100% - 2rem);
+  }
+
+  .cookie-consent__panel {
+    padding: 1rem;
+  }
+
+  .cookie-consent__category {
+    grid-template-columns: 1fr;
+  }
+}

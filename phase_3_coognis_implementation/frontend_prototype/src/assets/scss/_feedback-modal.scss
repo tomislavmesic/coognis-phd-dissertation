@@ -1,0 +1,38 @@
+@use 'variables' as *;
+
+.feedback-modal {
+  display: none;
+  background-color: rgba($color-ink-900, 0.48);
+}
+
+.feedback-modal--visible {
+  display: block;
+}
+
+.feedback-modal__content {
+  border: 1px solid rgba($color-brand-100, 0.9);
+  border-radius: $border-radius-xl;
+  box-shadow: 0 1.5rem 3rem rgba(15, 23, 42, 0.14);
+}
+
+.feedback-modal .modal-header,
+.feedback-modal .modal-body,
+.feedback-modal .modal-footer {
+  padding-right: map-get($spacers, 4);
+  padding-left: map-get($spacers, 4);
+}
+
+.feedback-modal .modal-body {
+  padding-top: 0;
+  padding-bottom: map-get($spacers, 4);
+}
+
+.feedback-modal .modal-footer {
+  gap: map-get($spacers, 2);
+  justify-content: flex-end;
+}
+
+.feedback-modal .form-select,
+.feedback-modal .form-control {
+  border-radius: $border-radius;
+}

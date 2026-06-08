@@ -1,0 +1,7 @@
+analysis_type,variable_x,variable_y,n,chi2,dof,p_value,bias_corrected_cramers_v,minimum_expected_count,expected_cells_below_5_percent,interpretation
+original exploratory,q13_personality_similarity,q16_personality_test_willingness,187,7.6609,4,0.104818,0.0992,0.1765,44.44,exploratory due to sparse expected counts
+original exploratory,q13_personality_similarity,q17_profile_use_consent,187,1.4415,4,0.836949,0.0,0.385,33.33,exploratory due to sparse expected counts
+original exploratory,q18_ai_helpfulness,q19_ai_internal_channel_analysis,187,24.52,6,0.000419,0.2235,0.2246,33.33,exploratory due to sparse expected counts
+original exploratory,q18_ai_helpfulness,q21_ai_work_content_analysis,187,8.8435,6,0.182572,0.0872,0.1925,33.33,exploratory due to sparse expected counts
+original exploratory,q24_organization_size,q07_hidden_knowledge_exists,187,4.9057,2,0.08605,0.1248,2.1551,33.33,exploratory due to sparse expected counts
+original exploratory,q27_decision_level,q09_hidden_knowledge_value,186,10.0954,8,0.258394,0.0747,0.8602,40.0,exploratory due to sparse expected counts

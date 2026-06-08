@@ -1,0 +1,111 @@
+@use 'variables' as *;
+
+.admin-ulm-sources {
+  padding: 2rem 0 3rem;
+}
+
+.admin-ulm-sources__card {
+  border: 1px solid rgba($color-ink-900, 0.08);
+}
+
+.admin-ulm-sources__mode-switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.admin-ulm-sources__title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+
+  small {
+    max-width: 38rem;
+    line-height: 1.4;
+  }
+}
+
+.admin-ulm-sources__counts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.admin-ulm-sources__file-meta {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.admin-ulm-sources__detail {
+  display: grid;
+  gap: map-get($spacers, 3);
+}
+
+.admin-ulm-sources__detail-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: map-get($spacers, 2);
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: map-get($spacers, 2);
+    border: 1px solid $color-line;
+    border-radius: $border-radius;
+    background: rgba($color-surface, 0.9);
+  }
+}
+
+.admin-ulm-sources__detail-source {
+  display: grid;
+  gap: 0.35rem;
+
+  code {
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+}
+
+.admin-ulm-sources__chunk-list {
+  display: grid;
+  gap: map-get($spacers, 2);
+  max-height: 32rem;
+  overflow: auto;
+
+  .admin-ulm-sources__chunk {
+    padding: map-get($spacers, 3);
+    border: 1px solid $color-line;
+    border-radius: $border-radius;
+    background: rgba($color-surface, 0.92);
+  }
+
+  .admin-ulm-sources__chunk-header {
+    margin-bottom: map-get($spacers, 2);
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+  }
+
+  .admin-ulm-sources__chunk-preview {
+    margin: 0;
+    white-space: pre-wrap;
+    word-break: break-word;
+    font: inherit;
+  }
+}
+
+[data-bs-theme='dark'] {
+  .admin-ulm-sources__detail-meta > div {
+    border-color: rgba($white, 0.1);
+    background: rgba($gray-900, 0.9);
+  }
+
+  .admin-ulm-sources__chunk {
+    border-color: rgba($white, 0.1);
+    background: rgba($gray-900, 0.9);
+  }
+}

@@ -1,0 +1,185 @@
+@use 'variables' as *;
+
+.form-section {
+  display: grid;
+  gap: map-get($spacers, 4);
+}
+
+.form-card {
+  padding: map-get($spacers, 5);
+  background: linear-gradient(180deg, rgba($color-surface, 0.98), rgba(#fbfdff, 0.95));
+  border: 1px solid rgba($color-line, 0.86);
+  border-radius: 1.35rem;
+  box-shadow: 0 1rem 2.5rem rgba(15, 23, 42, 0.06);
+}
+
+.form-label {
+  margin-bottom: 0.5rem;
+  color: $color-ink-700;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+[data-bs-theme='dark'] {
+  .form-label {
+    color: $color-ink-300;
+  }
+}
+
+.form-control,
+.form-select {
+  min-height: 3.1rem;
+  border: 1px solid rgba($color-line, 0.95);
+  border-radius: 0.95rem;
+  background: rgba($color-surface, 0.96);
+  box-shadow: none;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: rgba($color-brand-300, 0.95);
+  background: #fff;
+  box-shadow: 0 0 0 0.2rem rgba($color-brand-500, 0.12);
+}
+
+.form-control::placeholder {
+  color: rgba($color-ink-500, 0.82);
+}
+
+.form-check-input {
+  border-color: rgba($color-line, 0.95);
+  box-shadow: none;
+}
+
+.form-check-input:checked {
+  background-color: $color-brand-500;
+  border-color: $color-brand-500;
+}
+
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.2rem rgba($color-brand-500, 0.12);
+}
+
+.form-check-label {
+  color: $color-ink-700;
+}
+[data-bs-theme='dark'] .form-check-label {
+  color: $color-ink-300;
+}
+
+.form-hint {
+  color: $color-ink-500;
+  font-size: 0.875rem;
+}
+
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: map-get($spacers, 3);
+}
+
+.form-actions .btn[disabled],
+.form-actions .btn.disabled {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.form-control.is-invalid,
+.form-select.is-invalid,
+.form-check-input.is-invalid {
+  background-image: none;
+}
+
+.invalid-feedback.d-block {
+  margin-top: 0.5rem;
+  font-size: 0.84rem;
+}
+
+.form-control:disabled,
+.form-select:disabled {
+  background-color: rgba($color-brand-50, 0.58);
+}
+
+.registration-consents {
+  display: grid;
+  gap: map-get($spacers, 3);
+}
+
+.registration-consents .form-check {
+  padding: map-get($spacers, 3);
+  background:
+    linear-gradient(180deg, rgba($color-brand-50, 0.78), rgba($color-surface, 0.9));
+  border: 1px solid rgba($color-brand-100, 0.9);
+  border-radius: 1rem;
+}
+
+.registration-link {
+  color: $primary;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.registration-link:hover,
+.registration-link:focus {
+  color: $color-brand-700;
+  text-decoration: underline;
+}
+
+.registration-success {
+  text-align: center;
+}
+
+.registration-success__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 1.25rem;
+  border-radius: 999px;
+  color: $color-brand-700;
+
+  &.auth-theme-shell__brand-mark {
+    width: 5rem;
+    height: 5rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    .brand-logo {
+      svg {
+        width: auto;
+        height: 50px;
+      }
+    }
+  }
+}
+
+.registration-success__title {
+  color: $color-ink-900;
+  font-size: 1.45rem;
+  font-weight: 600;
+}
+
+.registration-success__lede {
+  max-width: 32rem;
+  margin-inline: auto;
+  color: $color-ink-500;
+  line-height: 1.7;
+}
+
+[data-bs-theme='dark'] {
+  .registration-success__title {
+    color: #f8fafc;
+  }
+
+  .registration-success__lede {
+    color: $color-ink-300;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .form-card {
+    padding: 1.2rem;
+  }
+}

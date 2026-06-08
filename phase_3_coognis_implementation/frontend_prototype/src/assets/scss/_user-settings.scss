@@ -1,0 +1,73 @@
+@use 'variables' as *;
+
+.user-settings {
+  display: grid;
+  gap: map-get($spacers, 4);
+}
+
+.user-settings__header {
+  margin-bottom: map-get($spacers, 1);
+}
+
+.user-settings__loading {
+  min-height: 18rem;
+  display: grid;
+  place-items: center;
+  border: 1px solid $color-line;
+  border-radius: $border-radius;
+  background-color: $color-surface;
+}
+
+.user-settings__meta-list {
+  display: grid;
+  gap: map-get($spacers, 3);
+}
+
+.user-settings__meta-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: map-get($spacers, 3);
+  padding-bottom: map-get($spacers, 3);
+  border-bottom: 1px solid rgba($color-line, 0.75);
+
+  &:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  dt,
+  dd {
+    margin-bottom: 0;
+  }
+
+  dt {
+    color: $color-ink-500;
+    font-weight: 600;
+  }
+
+  dd {
+    text-align: right;
+    color: $color-ink-900;
+    font-weight: 600;
+  }
+}
+
+[data-bs-theme='dark'] .user-settings__meta-item {
+  border-color: rgba($gray-700, 0.75);
+
+  dd {
+    color: $color-ink-300;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .user-settings__meta-item {
+    flex-direction: column;
+    align-items: flex-start;
+
+    dd {
+      text-align: left;
+    }
+  }
+}

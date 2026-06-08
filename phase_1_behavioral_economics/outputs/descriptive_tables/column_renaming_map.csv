@@ -1,0 +1,30 @@
+original_column,renamed_column
+Timestamp,timestamp
+Participant,participant
+Does your organization have well defined formal organizational structure and business processes?,q01_formal_structure
+"In your organization, after project is completed, you are doing formal analysis of the project (lessons learned)?",q02_lessons_learned
+"If you need an advice or a help with some work tasks, you usually try to find solution using:",q03_solution_source
+Do you use an internal Knowledge Base system that allows you to find specific knowledge and/or information that you need in your work?,q04_knowledge_base
+Do you use such an internal system that allows you to find a colleague who has the specific knowledge you need in your job?,q05_expert_finder
+Do you use such an internal system that allows you to find information about projects where certain specific knowledge was used?,q06_project_knowledge
+"Do you think that in your organization there is certain amount of hidden knowledge or knowledge that is not used, and should be?",q07_hidden_knowledge_exists
+"According to your estimation, what is the utilization of the total capacity of internal knowledge within your organization?",q08_knowledge_utilization
+"According to your estimation, what is the level of economic value of hidden internal knowledge within your organization?",q09_hidden_knowledge_value
+Do you think that there is a fear of knowledge sharing in your organization?,q10_fear_of_sharing
+You acquired some new knowledge or competence in your field of work. Would you share your newly acquired knowledge with your colleagues?,q11_share_with_colleagues
+You acquired some new knowledge that could improve your organization business values. Would you share your newly acquired knowledge with the management?,q12_share_with_management
+Do you find it more comfortable to work with colleagues who are closer to you in terms of personality?,q13_personality_similarity
+Do you consider yourself an extrovert?,q14_extrovert_self_assessment
+"Have you ever taken a personality assessment test like Big Five, Truity, DiSC, MBTI, etc. for any purpose?",q15_prior_personality_test
+Your organization plans to conduct a personality assessment test for all employees. Would you agree to participate in the test?,q16_personality_test_willingness
+"In order to improve operations and achieve better business results, your organization plans to use employee personality profiles in its daily work. Would you consent to the organization using your personality profile for this purpose?",q17_profile_use_consent
+Do you think that AI can help you with your daily basis working tasks in any way?,q18_ai_helpfulness
+"If AI could help you with your work, would you agree to AI analyze your interactions on internal official communication channels on a daily basis for this purpose?",q19_ai_internal_channel_analysis
+"If AI could help you with your work, would you agree to AI analyze your publicly available profiles on social networks for this purpose?",q20_ai_public_profile_analysis
+Would you allow AI to analyze your work and the content generated as a result of your work to help other colleagues in their work?,q21_ai_work_content_analysis
+Mark your gender,q22_gender
+Mark which age group you belong to,q23_age_group
+Indicate the size of the organization in which you work (according to the number of employees)?,q24_organization_size
+How long have you worked in the organization you work for?,q25_tenure
+Choose the level of your formal education,q26_education
+Your decision-making level in the organization you work for,q27_decision_level

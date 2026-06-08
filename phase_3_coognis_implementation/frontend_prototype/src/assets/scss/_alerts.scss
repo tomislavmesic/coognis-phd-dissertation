@@ -1,0 +1,29 @@
+@use 'variables' as *;
+
+.app-alert {
+  margin-bottom: 0;
+  border-width: 1px;
+  border-radius: $border-radius-sm;
+  box-shadow: 0 0.75rem 1.5rem rgba(15, 23, 42, 0.05);
+}
+
+.app-alert + .app-alert,
+.form-section .app-alert + .app-alert {
+  margin-top: map-get($spacers, 3);
+}
+
+.form-section > .app-alert {
+  margin-bottom: map-get($spacers, 1);
+}
+
+.app-alert--server {
+  border-left: 0.3rem solid rgba($color-danger, 0.7);
+}
+
+.app-alert--success {
+  border-left: 0.3rem solid rgba($color-success, 0.7);
+}
+
+.app-alert--info {
+  border-left: 0.3rem solid rgba($color-info, 0.75);
+}

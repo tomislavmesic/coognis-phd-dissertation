@@ -1,0 +1,49 @@
+Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+
+Copyright (c) 2026 Tomislav Mesic
+
+This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License.
+
+You are free to:
+
+- Share — copy and redistribute the material in any medium or format
+- Adapt — remix, transform, and build upon the material
+
+Under the following terms:
+
+1. Attribution  
+You must provide appropriate credit, cite the associated doctoral dissertation, and indicate if changes were made.
+
+2. NonCommercial  
+You may not use the material for commercial purposes.
+
+3. No additional restrictions  
+You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+
+Full license text:
+
+https://creativecommons.org/licenses/by-nc/4.0/
+
+------------------------------------------------------------
+
+Additional Research and Implementation Notice
+
+This repository accompanies the doctoral dissertation:
+
+"Enhancing Internal Knowledge Discovery through Artificial Intelligence and Psychological Profiling"
+
+The repository is intended exclusively for:
+
+- scientific reproducibility
+- academic research
+- educational use
+- non-commercial experimentation
+
+Certain implementation materials, particularly within the Phase 3 COOGNIS proof-of-feasibility implementation, intentionally exclude production-oriented components in order to protect intellectual property, privacy, security, and future commercialization considerations.
+
+Commercial reuse, redistribution, derivative product development, or integration into proprietary organizational systems based on COOGNIS-related implementation materials requires explicit written permission from the author.
+
+For inquiries regarding licensing or commercial collaboration, contact:
+
+tomislav.mesic@upce.cz  
+tomislav.mesic@algebra.hr

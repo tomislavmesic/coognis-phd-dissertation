@@ -1,0 +1,7 @@
+variable,category,count,percent
+q08_knowledge_utilization,25% to 50%,71,37.97
+q08_knowledge_utilization,50% to 75%,49,26.2
+q08_knowledge_utilization,Less than 25%,46,24.6
+q08_knowledge_utilization,More than 75%,16,8.56
+q08_knowledge_utilization,Completely unutilized,4,2.14
+q08_knowledge_utilization,100% utilized,1,0.53

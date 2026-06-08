@@ -1,0 +1,15 @@
+output,path
+Prepared input dataset,data/data_cleaned.csv
+Variable dictionary,data/variable_dictionary.csv
+Prepared dataset schema audit,outputs/descriptive_tables/prepared_dataset_schema_audit.csv
+Missing-value summary,outputs/descriptive_tables/missing_values.csv
+Unique-values audit,outputs/descriptive_tables/unique_values_by_column.csv
+Combined frequency tables,outputs/descriptive_tables/all_frequency_tables.csv
+Combined percentage tables,outputs/descriptive_tables/all_percentage_tables.csv
+Corrected q03 multi-select frequency table,outputs/descriptive_tables/q03_solution_source_multiselect_summary.csv
+Original exploratory chi-square table,outputs/exploratory_chi_square_original.csv
+Collapsed-category chi-square table,outputs/chi_square_collapsed_categories.csv
+Ordinal association table,outputs/ordinal_association_results.csv
+Exploratory composite indicator summary,outputs/descriptive_tables/exploratory_composite_indicator_summary.csv
+Data with exploratory composite indicators,outputs/data_with_exploratory_composites.csv
+Plots directory,outputs/plots

@@ -1,0 +1,80 @@
+@use 'variables' as *;
+
+.admin-conversations__card {
+  margin-bottom: map-get($spacers, 4);
+}
+
+.admin-conversations__session,
+.admin-conversations__participants,
+.admin-conversations__activity,
+.admin-conversations__entity {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.admin-conversations__detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: map-get($spacers, 3);
+  margin-bottom: map-get($spacers, 4);
+}
+
+.admin-conversations__detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: map-get($spacers, 3);
+  background: rgba($color-surface, 0.88);
+  border: 1px solid $color-line;
+  border-radius: $border-radius;
+}
+
+.admin-conversations__detail-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $color-ink-500;
+}
+
+.admin-conversations__detail-section + .admin-conversations__detail-section {
+  margin-top: map-get($spacers, 4);
+}
+
+.admin-conversations__message-list,
+.admin-conversations__handoff-list {
+  display: flex;
+  flex-direction: column;
+  gap: map-get($spacers, 2);
+}
+
+.admin-conversations__message,
+.admin-conversations__handoff {
+  padding: map-get($spacers, 3);
+  background: rgba($color-surface, 0.88);
+  border: 1px solid $color-line;
+  border-radius: $border-radius;
+}
+
+.admin-conversations__message-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: map-get($spacers, 3);
+  margin-bottom: map-get($spacers, 2);
+  font-size: 0.875rem;
+}
+
+@media (max-width: 991.98px) {
+  .admin-conversations__detail-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+[data-bs-theme='dark'] {
+  .admin-conversations__detail-item,
+  .admin-conversations__message, 
+  .admin-conversations__handoff {
+    border-color: rgba($white, 0.1);
+    background: rgba($gray-900, 0.9);
+  } 
+}

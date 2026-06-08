@@ -1,0 +1,66 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated doctoral dissertation."
+
+title: "COOGNIS PhD Dissertation Repository"
+repository-code: "https://github.com/tomislavmesic/coognis-phd-dissertation"
+
+authors:
+  - family-names: "Mesic"
+    given-names: "Tomislav"
+    email: "tomislav.mesic@upce.cz"
+    affiliation: "University of Pardubice, Faculty of Economics and Administration"
+    orcid: "https://orcid.org/0000-0003-4087-387X"
+
+contact:
+  - family-names: "Mesic"
+    given-names: "Tomislav"
+    email: "tomislav.mesic@algebra.hr"
+
+abstract: >
+  Reproducibility repository accompanying the doctoral dissertation
+  "Enhancing Internal Knowledge Discovery through Artificial Intelligence
+  and Psychological Profiling". The repository contains datasets,
+  statistical analyses, machine learning workflows, proof-of-feasibility
+  implementation materials, controlled experimental evaluation resources,
+  and supporting documentation organized according to the methodological
+  phases of the dissertation.
+
+keywords:
+  - artificial intelligence
+  - machine learning
+  - psychological profiling
+  - MBTI
+  - expert systems
+  - adaptive systems
+  - organizational intelligence
+  - hidden knowledge
+  - knowledge discovery
+  - adaptive communication
+  - organizational support
+  - COOGNIS
+
+license: "CC-BY-NC-4.0"
+
+version: "1.0.0"
+
+date-released: 2026-06-01
+
+preferred-citation:
+  type: thesis
+  authors:
+    - family-names: "Mesic"
+      given-names: "Tomislav"
+
+  title: "Enhancing Internal Knowledge Discovery through Artificial Intelligence and Psychological Profiling"
+
+  institution:
+    name: "University of Pardubice, Faculty of Economics and Administration"
+
+  year: 2026
+
+  publisher:
+    name: "University of Pardubice"
+
+  location: "Pardubice, Czech Republic"
+
+  type: "Doctoral dissertation"

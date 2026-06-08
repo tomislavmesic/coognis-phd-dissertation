@@ -1,0 +1,171 @@
+@use 'variables' as *;
+
+.admin-shell {
+  padding: map-get($spacers, 5) 0;
+}
+
+.admin-toolbar {
+  padding: 1.35rem 1.45rem;
+  border: 1px solid rgba($color-line, 0.82);
+  border-radius: $border-radius;
+  background:
+    radial-gradient(circle at top right, rgba($color-brand-100, 0.86), transparent 16rem),
+    linear-gradient(135deg, rgba($color-surface, 0.98), rgba(#eef4ff, 0.88));
+  box-shadow: 0 1rem 2.35rem rgba(15, 23, 42, 0.06);
+}
+
+.admin-panel {
+  padding: map-get($spacers, 4);
+  background-color: $color-surface;
+  border: 1px solid rgba($color-line, 0.85);
+  border-radius: $border-radius;
+}
+
+.admin-table-wrap {
+  overflow-x: auto;
+  background-color: $color-surface;
+  border: 1px solid rgba($color-line, 0.85);
+  border-radius: $border-radius;
+}
+
+.admin-chat-sessions,
+.admin-conversations,
+.admin-data-requests,
+.admin-expert-domains,
+.admin-knowledge,
+.admin-module-settings,
+.admin-registration-approval,
+.admin-ulm-sources,
+.admin-user-creation,
+.admin-user-management {
+  display: grid;
+  gap: map-get($spacers, 4);
+}
+
+.admin-chat-sessions__card,
+.admin-conversations__card,
+.admin-data-requests__card,
+.admin-expert-domains__card,
+.admin-knowledge__card,
+.admin-module-settings__card,
+.admin-registration-approval__card,
+.admin-ulm-sources__card,
+.admin-user-creation__card,
+.admin-user-management__card,
+.admin-user-management__summary-card {
+  // border: 1px solid rgba($color-line, 0.85);
+  // border-radius: $border-radius;
+  // background: rgba($color-surface, 0.95);
+  // box-shadow: 0 1rem 2.25rem rgba(15, 23, 42, 0.06);
+}
+
+.admin-chat-sessions__card .card-body,
+.admin-conversations__card .card-body,
+.admin-data-requests__card .card-body,
+.admin-expert-domains__card .card-body,
+.admin-knowledge__card .card-body,
+.admin-module-settings__card .card-body,
+.admin-registration-approval__card .card-body,
+.admin-ulm-sources__card .card-body,
+.admin-user-creation__card .card-body,
+.admin-user-management__card .card-body,
+.admin-user-management__summary-card .card-body {
+  padding: 1.25rem;
+}
+
+.admin-chat-sessions__table,
+.admin-conversations__table,
+.admin-data-requests__table,
+.admin-expert-domains__table,
+.admin-knowledge__table,
+.admin-registration-approval__table,
+.admin-ulm-sources__table,
+.admin-user-management__table {
+  margin-bottom: 0;
+}
+
+.admin-chat-sessions__table th,
+.admin-conversations__table th,
+.admin-data-requests__table th,
+.admin-expert-domains__table th,
+.admin-knowledge__table th,
+.admin-registration-approval__table th,
+.admin-ulm-sources__table th,
+.admin-user-management__table th {
+  color: $color-ink-700;
+  font-size: 0.82rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.admin-chat-sessions__table td,
+.admin-conversations__table td,
+.admin-data-requests__table td,
+.admin-expert-domains__table td,
+.admin-knowledge__table td,
+.admin-registration-approval__table td,
+.admin-ulm-sources__table td,
+.admin-user-management__table td {
+  vertical-align: middle;
+}
+
+.admin-chat-sessions__session,
+.admin-chat-sessions__entity,
+.admin-conversations__session,
+.admin-conversations__participants,
+.admin-conversations__activity,
+.admin-conversations__entity,
+.admin-knowledge__title,
+.admin-ulm-sources__title,
+.admin-ulm-sources__counts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.admin-conversations__detail-item,
+.admin-ulm-sources__detail-meta > div,
+.admin-ulm-sources__chunk,
+.admin-user-creation__switch,
+.admin-expert-domains__domain-option {
+  border-radius: 0.4rem;
+  border: 1px solid rgba($color-brand-100, 1);
+}
+
+.admin-user-creation__switch {
+  padding: map-get($spacers, 3);
+  padding-left: 3rem; 
+}
+
+.admin-user-management__summary-button {
+  padding: 1.15rem 1.2rem;
+  border-radius: inherit;
+}
+
+.admin-user-management__summary {
+  gap: 0.45rem;
+}
+
+.admin-user-management__summary-label,
+.admin-user-management__status-label,
+.admin-conversations__detail-label {
+  color: $color-ink-500;
+}
+
+.admin-user-management__summary-value {
+  font-weight: 600;
+}
+
+
+@media (max-width: 991.98px) {
+  .admin-toolbar {
+    padding: 1.15rem 1.2rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .admin-toolbar {
+    padding: 1rem;
+    border-radius: $border-radius;
+  }
+}
