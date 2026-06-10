@@ -21,6 +21,48 @@ The executable source of record is provided as Jupyter notebooks. Rendered HTML/
 | `results/` | Exported CSV result tables used as appendix artifacts. |
 | `figures/` | Exported PNG figures used as appendix artifacts. |
 
+## Experimental Materials
+
+The `experiments/` directory contains the participant-facing experimental instruments used for the two controlled evaluation studies. These materials document the opening screens, persona elicitation logic, scenario texts, response stimuli, interaction scripts, questionnaires, and representative examples.
+
+### Experiment A
+
+Experiment A evaluates psychologically adapted AI-generated support responses in comparison with generic AI-generated support responses. Participants are assigned to one of four communication personas based on their preferred answer style:
+
+- STJ: structured, procedural, step-by-step communication.
+- NTP: analytical, explanatory, reasoning-oriented communication.
+- NFJ: supportive, contextual, reassurance-oriented communication.
+- SFP: concise, practical, action-oriented communication.
+
+The experiment contains six university support scenarios covering student exchange, tuition payment delay, Wi-Fi access, suspicious email handling, attendance policy, and elective course selection. For each scenario, participants evaluate a generic response and a persona-adapted response. A Group A/B counterbalancing design varies whether the generic or adapted response appears as Response A or Response B, reducing response-order effects. The questionnaire captures perceived clarity, satisfaction, trust, reuse intention, and response preference.
+
+### Experiment B
+
+Experiment B evaluates expert interaction matching in simulated university support conversations. Participants are presented with matched and mismatched expert-user interactions, where the expert's communication style either corresponds to or differs from the participant's selected communication persona.
+
+The experiment contains four university scenarios: suspicious email, course schedule conflict, Wi-Fi access problem, and thesis topic change. Each scenario preserves the same core facts across conditions while varying the expert communication style. The questionnaire captures perceived ease, helpfulness, trust, likelihood of contacting the expert again, perceived style match, and overall confidence in using a support system that connects users with experts.
+
+## Repository Structure
+
+```text
+phase_4_controlled_experiments/
+  experiments/
+    experiment_a/
+    experiment_b/
+  data/
+  figures/
+  notebooks/
+  results/
+```
+
+| Path | Reproducibility Role |
+| --- | --- |
+| `experiments/` | Participant-facing experimental materials, questionnaires, scenario stimuli, persona definitions, and representative examples. |
+| `data/` | Input datasets used by the statistical notebooks. |
+| `figures/` | Exported visual artifacts generated from the statistical analysis. |
+| `notebooks/` | Executable Jupyter notebooks that reproduce the Experiment A and Experiment B analyses. |
+| `results/` | Exported CSV result tables corresponding to the notebook calculations. |
+
 ## Expected Data Layout
 
 The notebooks use relative paths and expect the following layout:
