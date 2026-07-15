@@ -72,7 +72,7 @@ Contains materials related to organizational and behavioral analysis used to ide
 
 Includes:
 
-- survey instruments
+- participant-facing survey questionnaire materials
 - cleaned survey datasets
 - statistical analysis notebooks
 - statistical outputs
@@ -141,6 +141,7 @@ Contains materials supporting the controlled experimental evaluation of psycholo
 Includes:
 
 - experimental scenarios
+- participant-facing questionnaire materials
 - participant and scenario datasets
 - statistical analysis notebooks
 - evaluation outputs
