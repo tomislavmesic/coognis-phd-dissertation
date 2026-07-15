@@ -169,13 +169,12 @@ coognis-phd-dissertation/
 ├── README.md
 ├── requirements.txt
 ├── CITATION.cff
+├── LICENCE
 │
 ├── phase_1_behavioral_economics/
 ├── phase_2_psychological_profiling/
 ├── phase_3_coognis_implementation/
-├── phase_4_controlled_experiments/
-│
-└── supplementary_materials/
+└── phase_4_controlled_experiments/
 ```
 
 ---
